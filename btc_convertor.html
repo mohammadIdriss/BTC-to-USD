@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<title>Btc Convertor</title>
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<link rel="stylesheet" href="style.css">
+	<meta http-equiv="refresh" content="30">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<link rel="shortcut icon" href="https://cdn3.iconfinder.com/data/icons/basic-28/64/x-26-512.png">
+</head>
+<body>
+<header><h1><i class="fab fa-btc"></i>TC =&gt; USD</h1></header>
+<main>
+	<form>
+		<label>Enter the BTC amount</label>
+		<input type="text" name="BTC" required value="" spellcheck="true" onkeypress='validate(event)'>
+		<button type="button" onclick="request.onreadystatechange()">Send</button>
+	</form>
+	<div>
+		The result is<br><span class="result"></span>
+	</div>
+</main>
+<script src="javascript.js"></script>
+</body>
+</html>
